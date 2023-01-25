@@ -1,11 +1,22 @@
 # user-interface
-Pour l'installation
-Créer une base de donnée
-symfony console doctrine:create:database
+## Pour l'installation
+Cloner le dépot  
+Installer les dépendances  
+`composer install`
 
-Jouer les migrations
-symfony console doctrine:migrations:migrate
+Créer une base de donnée  
+`symfony console doctrine:database:create`
 
-Jouer le script de création des utilisateurs
-symfony console make:add-users
+Jouer les migrations  
+`symfony console doctrine:migrations:migrate`
+
+Jouer le script de création des utilisateurs  
+`symfony console add-users`
+
+Lancer le serveur  
+`symfony serve`
+
+Accès de test :  
+Utilisateur : test@test.fr / test
+Admin : admin@admin.fr / admin
 
