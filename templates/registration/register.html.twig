@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}Connexion{% endblock %}
+
+{% block body %}
+    <h1>Formulaire de connexion</h1>
+    {{ form_start(registrationForm) }}
+        {{ form_row(registrationForm.email)}} 
+        
+        {{ form_row(registrationForm.plainPassword) }}
+        {{ form_row(registrationForm.agreeTerms) }}
+
+        <button type="submit" class="btn btn-lg btn-primary">Register</button>
+    {{ form_end(registrationForm) }}
+{% endblock %}
